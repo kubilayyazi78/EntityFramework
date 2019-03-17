@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ders1", "Ders1", "{8CBD5B81
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseFirstApp", "DatabaseFirstApp\DatabaseFirstApp.csproj", "{BEFC15E7-70DB-44D7-B884-EB4C7ABDC0CA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ders2", "Ders2", "{0B5AA0CC-FC5E-4A17-931F-BEC2C6C94A41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeFirstApp", "CodeFirstApp\CodeFirstApp.csproj", "{E0865E25-4F18-4456-BAAA-73E343481257}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +21,17 @@ Global
 		{BEFC15E7-70DB-44D7-B884-EB4C7ABDC0CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEFC15E7-70DB-44D7-B884-EB4C7ABDC0CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEFC15E7-70DB-44D7-B884-EB4C7ABDC0CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0865E25-4F18-4456-BAAA-73E343481257}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0865E25-4F18-4456-BAAA-73E343481257}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0865E25-4F18-4456-BAAA-73E343481257}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0865E25-4F18-4456-BAAA-73E343481257}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BEFC15E7-70DB-44D7-B884-EB4C7ABDC0CA} = {8CBD5B81-7D5A-41E4-B31F-53AA23F2ACBE}
+		{E0865E25-4F18-4456-BAAA-73E343481257} = {0B5AA0CC-FC5E-4A17-931F-BEC2C6C94A41}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7B87F221-7777-430A-8739-7C091F36B5F4}
