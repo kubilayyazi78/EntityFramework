@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleTables;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -55,6 +56,56 @@ namespace DatabaseFirstApp
             //var category = db.Categories.Find(9);
             //db.Categories.Remove(category);
             //db.SaveChanges();
+
+            //var result = db.Categories;
+
+            //var result = from cat in db.Categories select cat; //linq
+            //ConsoleTable.From(result).Write();
+
+
+            //var result = db.Categories.Select(x => new
+            //{
+            //    Id = x.CategoryID,
+            //    Name = x.CategoryName
+            //});
+
+            //var result = from cat in db.Categories
+            //             select new
+            //             {
+            //                 Id = cat.CategoryID,
+            //                 Name = cat.CategoryName
+            //             };
+
+            //ConsoleTable.From(result).Write();
+
+            //var result = db.Categories.Take(2);
+
+
+            //var result = db.Categories.OrderBy(x => x.CategoryName);
+            //var result = db.Categories.OrderByDescending(x => x.CategoryName);
+
+            //var result = db.Categories.Where(x => x.CategoryID < 5);
+
+            //var result = db.Categories.Where(x => x.CategoryID ==1 || x.CategoryID==3);
+
+            // var result = db.Categories.Sum(x => x.CategoryID);
+
+            // Console.WriteLine(result);
+            // ConsoleTable.From(result).Write();
+
+            //var result = db.Categories.Select(x => new
+            //{
+            //    Id=x.CategoryID,
+            //    IdKara=x.CategoryID*x.CategoryID
+            //});
+
+            //var result = db.Categories.Where(x => x.CategoryName.Contains("ro"));
+
+            //var result = db.Categories.Where(x => x.CategoryName.StartsWith("pr"));
+
+            //var result = db.Categories.Where(x => x.CategoryName.EndsWith("ts"));
+
+            //ConsoleTable.From(result).Write();
             Console.ReadKey();
         }
     }
