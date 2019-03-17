@@ -193,6 +193,35 @@ namespace DatabaseFirstApp
             //    Console.WriteLine(product.ProductName);
             //    Console.WriteLine(product.Supplier.CompanyName);
             //}
+
+
+            //var products = db.Products.OrderBy(x => x.CategoryID).ThenBy(x=>x.ProductName).Select(x => new
+            //{
+            //    x.CategoryID,
+            //    x.ProductName
+
+            //});
+
+            //var products = db.Products.OrderBy(x => x.CategoryID).Skip(5).Take(5).Select(x => new
+            //{
+            //    x.CategoryID,
+            //    x.ProductName
+
+            //});
+
+            //var result = db.Products.All(x => x.UnitPrice>0);
+            //var result = db.Products.Any(x => x.UnitPrice > 1000);
+
+
+            //var result = db.Products.Single(x => x.ProductID == 1);
+
+            //var result = db.Products.SingleOrDefault(x => x.ProductID == 1000);
+
+            //var result = db.Products.First(x => x.CategoryID == 1);
+
+            var result = db.Products.FirstOrDefault(x => x.ProductID == 1);
+            Console.WriteLine(result);
+            //ConsoleTable.From(products).Write();
             Console.ReadKey();
         }
     }
