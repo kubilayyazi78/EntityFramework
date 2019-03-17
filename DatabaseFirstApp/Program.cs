@@ -11,7 +11,8 @@ namespace DatabaseFirstApp
     {
         static void Main(string[] args)
         {
-            NorthwindEntities1 db = new NorthwindEntities1();
+            NorthwindEntities3 db = new NorthwindEntities3();
+            //NorthwindEntities1 db = new NorthwindEntities1();
             //var products = db.Ten_Most_Expensive_Products();
             //foreach (var pro in products)
             //{
@@ -106,6 +107,76 @@ namespace DatabaseFirstApp
             //var result = db.Categories.Where(x => x.CategoryName.EndsWith("ts"));
 
             //ConsoleTable.From(result).Write();
+
+            //var result = from c in db.Categories
+            //             join p in db.Products
+            //             on c.CategoryID equals p.CategoryID
+            //             select new
+            //             {
+            //                 p.ProductName,
+            //                 c.CategoryName
+            //             };
+
+            //var result = from c in db.Categories
+            //             join p in db.Products
+            //             on c.CategoryID equals p.CategoryID
+            //             orderby p.UnitPrice descending
+            //             select new
+            //             {
+            //                 p.ProductName,
+            //                 c.CategoryName,
+            //                 p.UnitPrice
+            //             };
+
+            //var result = from p in db.Products
+            //             group p by p.CategoryID into g
+            //             select new
+            //             {
+            //                 g.Key,
+            //                 NumberOfProducts = g.Count()
+            //             };
+
+            //var result = from p in db.Products
+            //             join c in db.Categories
+            //             on p.CategoryID equals c.CategoryID
+            //             group c by c.CategoryName into g
+            //             select new
+            //             {
+            //                 g.Key,
+            //                 NumberOfProducts = g.Count()
+            //             };
+
+
+            //var result = from p in db.Products
+            //             join c in db.Categories
+            //             on p.CategoryID equals c.CategoryID
+            //             group new { c ,p } by new { c.CategoryName } into g
+            //             select new
+            //             {
+            //                 g.Key.CategoryName,
+            //                 NumberOfProducts = g.Count(),
+            //                 TotalPrice=g.Sum(x=>x.p.UnitPrice),
+            //                 MaxPrice=g.Max(x=>x.p.UnitPrice),
+            //                 MinPrice=g.Min(x=>x.p.UnitPrice)
+
+            //             };
+
+            //var result =( from p in db.Products
+            //             join c in db.Categories
+            //             on p.CategoryID equals c.CategoryID
+            //             group new { c, p } by new { c.CategoryName } into g
+            //             select new
+            //             {
+            //                 g.Key.CategoryName,
+            //                 NumberOfProducts = g.Count(),
+            //                 TotalPrice = g.Sum(x => x.p.UnitPrice),
+            //                 MaxPrice = g.Max(x => x.p.UnitPrice),
+            //                 MinPrice = g.Min(x => x.p.UnitPrice)
+
+            //             }).Where(x=>x.TotalPrice>300);
+
+            //ConsoleTable.From(result).Write();
+
             Console.ReadKey();
         }
     }

@@ -56,51 +56,42 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Category.cs">
-      <DependentUpon>NorthWindModel.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="KubilayMode.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>KubilayMode.tt</DependentUpon>
     </Compile>
-    <Compile Include="NorthWindModel.Context.cs">
+    <Compile Include="Model.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>NorthWindModel.Context.tt</DependentUpon>
+      <DependentUpon>Model.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="NorthWindModel.cs">
+    <Compile Include="Model.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>NorthWindModel.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="NorthWindModel.Designer.cs">
+    <Compile Include="Model.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>NorthWindModel.edmx</DependentUpon>
+      <DependentUpon>Model.edmx</DependentUpon>
     </Compile>
     <Compile Include="Product.cs">
-      <DependentUpon>NorthWindModel.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sales_by_Year_Result.cs">
-      <DependentUpon>NorthWindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Supplier.cs">
-      <DependentUpon>NorthWindModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Ten_Most_Expensive_Products_Result.cs">
-      <DependentUpon>NorthWindModel.tt</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="NorthWindModel.edmx">
+    <EntityDeploy Include="Model.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>NorthWindModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>Model.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="NorthWindModel.edmx.diagram">
-      <DependentUpon>NorthWindModel.edmx</DependentUpon>
+    <None Include="Model.edmx.diagram">
+      <DependentUpon>Model.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
@@ -112,15 +103,15 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>KubilayMode.cs</LastGenOutput>
     </Content>
-    <Content Include="NorthWindModel.Context.tt">
+    <Content Include="Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>NorthWindModel.edmx</DependentUpon>
-      <LastGenOutput>NorthWindModel.Context.cs</LastGenOutput>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="NorthWindModel.tt">
+    <Content Include="Model.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>NorthWindModel.edmx</DependentUpon>
-      <LastGenOutput>NorthWindModel.cs</LastGenOutput>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
