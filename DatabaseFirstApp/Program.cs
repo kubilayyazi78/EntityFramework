@@ -177,6 +177,22 @@ namespace DatabaseFirstApp
 
             //ConsoleTable.From(result).Write();
 
+            //var category = db.Categories.Find(1);
+            //var products = db.Products.Where(x => x.CategoryID == category.CategoryID);
+            //var products = category.Products;
+            //foreach (var product in products)
+            //{
+            //    Console.WriteLine(product.ProductName);
+            //    Console.WriteLine("supplier" + product.Supplier.CompanyName);
+            //}
+
+            //var category = db.Categories.Include("Products").Include("Products.Supplier").FirstOrDefault(x => x.CategoryID == 1);
+            //var products = category.Products;
+            //foreach (var product in products)
+            //{
+            //    Console.WriteLine(product.ProductName);
+            //    Console.WriteLine(product.Supplier.CompanyName);
+            //}
             Console.ReadKey();
         }
     }

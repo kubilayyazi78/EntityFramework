@@ -18,6 +18,7 @@ namespace DatabaseFirstApp
         public NorthwindEntities3()
             : base("name=NorthwindEntities3")
         {
+            this.Configuration.LazyLoadingEnabled = false;
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -27,5 +28,6 @@ namespace DatabaseFirstApp
     
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Product> Products { get; set; }
+        public virtual DbSet<Supplier> Suppliers { get; set; }
     }
 }
