@@ -52,7 +52,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Departmant.cs" />
     <Compile Include="FootballContext.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="PlayerAddress.cs" />
     <Compile Include="Program.cs" />

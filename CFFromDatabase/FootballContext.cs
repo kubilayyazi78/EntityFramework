@@ -16,7 +16,7 @@ namespace CFFromDatabase
         public virtual DbSet<Player> Players { get; set; }
         public virtual DbSet<Sponsor> Sponsors { get; set; }
         public virtual DbSet<Team> Teams { get; set; }
-
+        public virtual DbSet<Departmant> Departmants { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Player>()
