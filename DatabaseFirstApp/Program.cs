@@ -21,11 +21,40 @@ namespace DatabaseFirstApp
             //{
             //    Console.WriteLine(cat.CategoryName);
             //}
-            var sales = db.Sales_by_Year(new DateTime(1997, 1, 1), DateTime.Now);
-            foreach (var sale in sales)
-            {
-                Console.WriteLine(sale.Year+"/"+sale.Subtotal);
-            }
+            //var sales = db.Sales_by_Year(new DateTime(1997, 1, 1), DateTime.Now);
+            //foreach (var sale in sales)
+            //{
+            //    Console.WriteLine(sale.Year + "/" + sale.Subtotal);
+            //}
+
+            //create
+
+            //var category = new Category();
+            //category.CategoryName = "Çerez";
+            //category.Description = "Fındık";
+            //db.Categories.Add(category);
+            //db.SaveChanges();
+
+            //read 
+
+            //var categories = db.Categories;
+            //foreach (var category in categories)
+            //{
+            //    Console.WriteLine(category.CategoryName + "//" + category.Description);
+            //}
+
+            //update
+
+            //var category = db.Categories.Find(9);
+            //category.CategoryName = "içecekler";
+            //category.Description = "kola";
+            //db.SaveChanges();
+
+            //delete
+
+            //var category = db.Categories.Find(9);
+            //db.Categories.Remove(category);
+            //db.SaveChanges();
             Console.ReadKey();
         }
     }
